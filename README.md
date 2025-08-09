@@ -1,41 +1,43 @@
-<!-- Animated terminal-style SVG-->
+<!-- Animated terminal-style SVG  -->
+
 <p align="center">
-  <svg width="720" height="120" viewBox="0 0 720 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
-    <title id="title">Chrispin-m — terminal banner</title>
-    <defs>
-      <linearGradient id="g" x1="0" x2="1">
-        <stop offset="0" stop-color="#00ff99"/>
-        <stop offset="1" stop-color="#00d4ff"/>
-      </linearGradient>
-      <style>
-        <![CDATA[
-          .bg { fill:#0b1020; rx:12; ry:12; }
-          .term { font: 600 18px/1 'SFMono-Regular', Consolas, "Roboto Mono", monospace; fill: url(#g); }
-          .sub { font: 400 12px/1 'SFMono-Regular', monospace; fill:#9aa7c7; }
-        ]]>
-      </style>
-    </defs>
-    <rect class="bg" x="0" y="0" width="720" height="120" rx="12" ry="12"/>
-    <text x="28" y="38" class="term">➜  chrispin@devbox ~</text>
-    <text x="28" y="62" class="sub" id="typed">Loading...</text>
-    <!-- animate a few tech-lines (typing effect) -->
-    <animate 
-      xlink:href="#typed" attributeName="opacity" from="0" to="1"
-      begin="0s" dur="0.001s" fill="freeze" />
-    <set xlink:href="#typed" attributeName="opacity" to="1" begin="0.01s" />
-    <text x="28" y="62" class="sub">
-      <tspan id="t1">Python · Django · Rust · Motoko · Solidity · TypeScript · React · Vue</tspan>
-      <animate attributeName="display" values="inline;none" begin="0s" dur="4s" repeatCount="indefinite" />
-    </text>
-    <text x="28" y="80" class="sub">
-      <tspan id="t2">Web3 · Smart contracts · DevOps · CI/CD · Security · AI pipelines</tspan>
-      <animate attributeName="display" values="none;inline" begin="4s" dur="4s" repeatCount="indefinite" />
-    </text>
-    <text x="28" y="98" class="sub">
-      <tspan id="t3">Open-source tinkerer 🔧 · Ship, test, and break stuff safely</tspan>
-      <animate attributeName="display" values="none;inline" begin="8s" dur="4s" repeatCount="indefinite" />
-    </text>
-  </svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="120" viewBox="0 0 720 120" role="img" aria-labelledby="title">
+  <title id="title">Chrispin-m — terminal banner</title>
+
+  <rect x="0" y="0" width="720" height="120" rx="12" fill="#0b1020"/>
+
+  <!-- header -->
+  <text x="28" y="38" font-family="SFMono-Regular, Consolas, 'Roboto Mono', monospace"
+        font-weight="600" font-size="18" fill="url(#grad)" id="header">
+    ➜  chrispin@devbox ~
+  </text>
+
+  <!-- gradient definition -->
+  <defs>
+    <linearGradient id="grad" x1="0" x2="1">
+      <stop offset="0" stop-color="#00ff99"/>
+      <stop offset="1" stop-color="#00d4ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- three lines that crossfade -->
+  <text x="28" y="62" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" id="l1" opacity="1">
+    Python · Django · Rust · Motoko · Solidity · TypeScript · React · Vue
+    <animate attributeName="opacity" values="1;0;0;1" dur="12s" repeatCount="indefinite" begin="0s"/>
+  </text>
+
+  <text x="28" y="80" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" id="l2" opacity="0">
+    Web3 · Smart contracts · DevOps · CI/CD · Security · AI pipelines
+    <animate attributeName="opacity" values="0;1;0;0" dur="12s" repeatCount="indefinite" begin="0s"/>
+  </text>
+
+  <text x="28" y="98" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" id="l3" opacity="0">
+    Open-source tinkerer 🔧 · Ship, test, and break stuff safely
+    <animate attributeName="opacity" values="0;0;1;0" dur="12s" repeatCount="indefinite" begin="0s"/>
+  </text>
+</svg>
+
 </p>
 
 # 👋 Hi, I’m **@Chrispin-m**
