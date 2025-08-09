@@ -138,5 +138,3 @@ flowchart LR
 Give me a star ⭐ - my code runs faster when it feels loved. It’s science. Trust me.
 
 ---
-
-```
