@@ -1,47 +1,12 @@
 <p align="center">
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160" role="img" aria-label="Cosmic terminal banner">
-  <defs>
-    <!-- Deep gradient -->
-    <linearGradient id="cosmicGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a1028"/>
-      <stop offset="50%" stop-color="#0c1a40"/>
-      <stop offset="100%" stop-color="#071634"/>
-    </linearGradient>
-    <!-- Etherial orb glow -->
-    <radialGradient id="orbGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00ffea" stop-opacity="0.8"/>
-      <stop offset="70%" stop-color="#0088ff" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#000720" stop-opacity="0"/>
-    </radialGradient>
-    <!-- Text gradient with cosmic hues -->
-    <linearGradient id="textGrad" x1="0%" x2="100%">
-      <stop offset="0%" stop-color="#7ef9a2"/>
-      <stop offset="100%" stop-color="#7ad8ff"/>
-    </linearGradient>
-    <!-- Etherial particle field -->
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
-      <feFlood flood-color="#7ad8ff" flood-opacity="0.6" result="color"/>
-      <feComposite in="color" in2="blur" operator="in" result="glow"/>
-      <feMerge>
-        <feMergeNode in="glow"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
+  <img alt="Ethereal Banner" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGd1cHdzNTdqYXBpMG51eHNlMnhkemhoM3N5N2VwM3JlODM5ZGRkcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bJ4TVNYNUympPgcpem/giphy.gif" width="720"/>
+</p>
 
-  <!-- Cosmic background -->
-  <rect width="100%" height="100%" rx="16" fill="url(#cosmicGrad)"/>
-  
-  <!-- Floating orbs -->
-  <circle cx="120" cy="40" r="36" fill="url(#orbGlow)" filter="url(#glow)"/>
-  <circle cx="600" cy="100" r="24" fill="url(#orbGlow)" filter="url(#glow)"/>
-  <circle cx="400" cy="120" r="18" fill="url(#orbGlow)" filter="url(#glow)"/>
-  
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160" role="img" aria-label="Cosmic terminal banner">
   <!-- Terminal header -->
   <text x="32" y="48" font-family="'SF Mono','Fira Code',monospace" 
         font-weight="700" font-size="18" fill="url(#textGrad)">
-    ➜ chrispin@ethereal ~
+    ➜ @chrispin-m ~
   </text>
   
   <!-- Pulsing cursor -->
@@ -61,7 +26,6 @@
   <!-- Etherial glow line -->
   <rect width="100%" height="4" fill="url(#textGrad)" opacity="0.1"/>
 </svg>
-</p>
 
 <h1 align="center">🌌 Chrispin Mwangi Wachira</h1>
 <h3 align="center">Digital Architect · Code Sorcerer · Reality Bender</h3>
