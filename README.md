@@ -13,7 +13,6 @@
         <animate attributeName="stop-color" dur="15s" values="#071c3a;#0a2548;#0d1430;#071c3a" repeatCount="indefinite" />
       </stop>
     </linearGradient>
-    
     <!-- Enhanced orb glow with pulse effect -->
     <radialGradient id="orb" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#00ffea" stop-opacity="0.9">
@@ -22,7 +21,6 @@
       <stop offset="70%" stop-color="#0088ff" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#000720" stop-opacity="0"/>
     </radialGradient>
-    
     <!-- Text gradient with subtle shift -->
     <linearGradient id="textGrad" x1="0%" x2="100%">
       <stop offset="0%" stop-color="#7ef9a2">
@@ -32,7 +30,6 @@
         <animate attributeName="stop-color" dur="8s" values="#7ad8ff;#d87aff;#7ad8ff" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
-    
     <!-- Etherial particle field -->
     <pattern id="particles" width="8" height="8" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="0.5" fill="#fff" opacity="0.2">
@@ -183,13 +180,11 @@ flowchart LR
       <stop offset="0%" stop-color="#0a1a2a" stop-opacity="0.9"/>
       <stop offset="100%" stop-color="#07162a" stop-opacity="0.95"/>
     </linearGradient>
-    
     <!-- Neon text gradient -->
     <linearGradient id="neon" x1="0%" x2="100%">
       <stop offset="0%" stop-color="#7ef9a2"/>
       <stop offset="100%" stop-color="#7ad8ff"/>
     </linearGradient>
-    
     <!-- Animated command reveal -->
     <clipPath id="typeReveal">
       <rect id="revealer" width="0" height="30"/>
