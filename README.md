@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Ethereal Banner" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGd1cHdzNTdqYXBpMG51eHNlMnhkemhoM3N5N2VwM3JlODM5ZGRkcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bJ4TVNYNUympPgcpem/giphy.gif" width="720"/>
+  <img alt="Banner" src="https://tenor.com/bo3IhJf9wVs.gif" width="720"/>
 </p>
 
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160" role="img" aria-label="Cosmic terminal banner">
