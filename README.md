@@ -1,252 +1,282 @@
 <p align="center">
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="720" height="160" viewBox="0 0 720 160"
+<svg xmlns="http://www.w3.org/2000/svg" 
+     width="720" height="160" viewBox="0 0 720 160" 
+     preserveAspectRatio="xMidYMid meet" 
      role="img" aria-label="Chrispin-m — terminal banner">
   <defs>
-    <!-- background gradient that subtly cycles -->
-    <linearGradient id="bgGrad" x1="0" x2="1">
-      <stop offset="0" stop-color="#06101a">
-        <animate attributeName="stop-color" dur="8s" values="#06101a;#081428;#0b1020;#06101a" repeatCount="indefinite" />
+    <!-- Enhanced background gradient with cosmic shift -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1028">
+        <animate attributeName="stop-color" dur="12s" values="#0a1028;#0c1a40;#071634;#0a1028" repeatCount="indefinite" />
       </stop>
-      <stop offset="1" stop-color="#07142a">
-        <animate attributeName="stop-color" dur="10s" values="#07142a;#09203a;#06101a;#07142a" repeatCount="indefinite" />
+      <stop offset="100%" stop-color="#071c3a">
+        <animate attributeName="stop-color" dur="15s" values="#071c3a;#0a2548;#0d1430;#071c3a" repeatCount="indefinite" />
       </stop>
     </linearGradient>
-    <!-- glowing orb gradient -->
+    
+    <!-- Enhanced orb glow with pulse effect -->
     <radialGradient id="orb" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#00ffd5" stop-opacity="0.95"/>
-      <stop offset="0.5" stop-color="#00b2ff" stop-opacity="0.55"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#00ffea" stop-opacity="0.9">
+        <animate attributeName="stop-opacity" dur="4s" values="0.9;0.7;0.9" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="70%" stop-color="#0088ff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#000720" stop-opacity="0"/>
     </radialGradient>
-    <!-- text gradient -->
-    <linearGradient id="textGrad" x1="0" x2="1">
-      <stop offset="0" stop-color="#7ef9a2"/>
-      <stop offset="1" stop-color="#7ad8ff"/>
+    
+    <!-- Text gradient with subtle shift -->
+    <linearGradient id="textGrad" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#7ef9a2">
+        <animate attributeName="stop-color" dur="8s" values="#7ef9a2;#a2f9e8;#7ef9a2" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#7ad8ff">
+        <animate attributeName="stop-color" dur="8s" values="#7ad8ff;#d87aff;#7ad8ff" repeatCount="indefinite"/>
+      </stop>
     </linearGradient>
-    <!-- subtle grain using tiny semi-opaque rectangles (keeps it safe vs complex filters) -->
-    <pattern id="grain" width="6" height="6" patternUnits="userSpaceOnUse">
-      <rect width="6" height="6" fill="#000" opacity="0.02"/>
-      <circle cx="1.2" cy="4.8" r="0.6" fill="#fff" opacity="0.03"/>
-      <circle cx="4.7" cy="1.5" r="0.4" fill="#fff" opacity="0.02"/>
+    
+    <!-- Etherial particle field -->
+    <pattern id="particles" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.5" fill="#fff" opacity="0.2">
+        <animate attributeName="opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="6" cy="6" r="0.7" fill="#aaffff" opacity="0.15">
+        <animate attributeName="opacity" values="0.05;0.25;0.05" dur="4s" repeatCount="indefinite"/>
+      </circle>
     </pattern>
   </defs>
 
-  <!-- background -->
-  <rect x="0" y="0" width="720" height="160" rx="16" fill="url(#bgGrad)"/>
-  <rect x="0" y="0" width="720" height="160" rx="16" fill="url(#grain)" />
-
-  <!-- drifting orbs for surreal mood -->
-  <g opacity="0.85">
-    <circle cx="120" cy="30" r="36" fill="url(#orb)" opacity="0.9">
-      <animateTransform attributeName="transform" type="translate" dur="16s"
-                        values="0 0; 40 12; -20 30; 0 0" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.7;0.95;0.6;0.7" dur="12s" repeatCount="indefinite"/>
+  <!-- Background with cosmic gradient -->
+  <rect width="100%" height="100%" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Particle overlay -->
+  <rect width="100%" height="100%" rx="16" fill="url(#particles)" opacity="0.4"/>
+  
+  <!-- Etherial orbs with floating paths -->
+  <g opacity="0.85" filter="url(#glow)">
+    <circle cx="120" cy="40" r="36" fill="url(#orb)">
+      <animateMotion path="M0,0 C30,-15 10,40 -20,30 0,0" dur="18s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="36;40;36" dur="8s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="560" cy="46" r="26" fill="url(#orb)" opacity="0.8">
-      <animateTransform attributeName="transform" type="translate" dur="14s"
-                        values="0 0; -30 18; 8 28; 0 0" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.5;0.85;0.55;0.5" dur="10s" repeatCount="indefinite"/>
+    <circle cx="600" cy="100" r="24" fill="url(#orb)">
+      <animateMotion path="M0,0 C-25,15 10,-30 5,20 0,0" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.9;0.7" dur="5s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="420" cy="120" r="18" fill="url(#orb)" opacity="0.7">
-      <animateTransform attributeName="transform" type="translate" dur="18s"
-                        values="0 0; 10 -28; -12 8; 0 0" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.4;0.8;0.45;0.4" dur="9s" repeatCount="indefinite"/>
+    <circle cx="400" cy="120" r="18" fill="url(#orb)">
+      <animateMotion path="M0,0 C15,-20 -10,15 0,0" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="18;22;18" dur="6s" repeatCount="indefinite"/>
     </circle>
   </g>
 
-  <!-- header / prompt -->
-  <text x="32" y="48" font-family="SFMono-Regular, Consolas, 'Roboto Mono', monospace"
-        font-weight="700" font-size="18" fill="url(#textGrad)" letter-spacing="0.6">
-    ➜  chrispin@devbox ~
-    <!-- tiny surreal wobble -->
-    <animateTransform attributeName="transform" type="translate" dur="6s" values="0 0; 2 -1; -2 1; 0 0" repeatCount="indefinite"/>
+  <!-- Terminal header with warp effect -->
+  <text x="32" y="48" font-family="'SF Mono','Fira Code',monospace" 
+        font-weight="700" font-size="18" fill="url(#textGrad)">
+    ➜ chrispin@ethereal ~
+    <animateTransform attributeName="transform" type="skewX" values="0;-2;0;2;0" dur="15s" repeatCount="indefinite"/>
   </text>
 
-  <!-- blinking cursor -->
-  <rect x="268" y="34" width="8" height="12" rx="2" fill="#7ef9a2" opacity="0.95">
-    <animate attributeName="opacity" values="0;1;0;1" dur="1.4s" repeatCount="indefinite"/>
+  <!-- Pulsing cursor -->
+  <rect x="268" y="34" width="8" height="16" rx="2" fill="#7ef9a2">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
+    <animate attributeName="width" values="8;12;8" dur="1.5s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- three tech lines: crossfade + slight float -->
-  <text id="line1" x="32" y="78" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="1">
-    Python · Django · Rust · Motoko · Solidity · TypeScript · React · Vue
-    <animate attributeName="opacity" values="1;0;0;1" dur="12s" repeatCount="indefinite"/>
-    <animateTransform attributeName="transform" type="translate" dur="12s" values="0 0; 0 -2; 0 4; 0 0" repeatCount="indefinite"/>
+  <!-- Floating tech lines -->
+  <text x="32" y="80" font-family="'Fira Code',monospace" font-size="12" fill="#c0d7ff" opacity="1">
+    <tspan>Python · Rust · Motoko · Solidity · TypeScript · React · Vue</tspan>
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="6s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-2;0,0" dur="3s" repeatCount="indefinite"/>
   </text>
 
-  <text id="line2" x="32" y="100" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="0">
-    Web3 · Smart contracts · DevOps · CI/CD · Security · AI pipelines
-    <animate attributeName="opacity" values="0;1;0;0" dur="12s" repeatCount="indefinite"/>
-    <animateTransform attributeName="transform" type="translate" dur="12s" values="0 2; 0 0; 0 -3; 0 2" repeatCount="indefinite"/>
+  <text x="32" y="102" font-family="'Fira Code',monospace" font-size="12" fill="#c0d7ff" opacity="0.9">
+    <tspan>Web3 · Smart Contracts · CI/CD · Security · AI/ML · Distributed Systems</tspan>
+    <animate attributeName="opacity" values="0.7;0.9;0.7" dur="7s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,2;0,0" dur="4s" repeatCount="indefinite"/>
   </text>
 
-  <text id="line3" x="32" y="122" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="0">
-    Open-source tinkerer 🔧 · Ship, test, and break stuff safely
-    <animate attributeName="opacity" values="0;0;1;0" dur="12s" repeatCount="indefinite"/>
-    <animateTransform attributeName="transform" type="translate" dur="12s" values="0 -3; 0 2; 0 0; 0 -3" repeatCount="indefinite"/>
+  <text x="32" y="124" font-family="'Fira Code',monospace" font-size="12" fill="#c0d7ff" opacity="0.85">
+    <tspan>Open-source alchemist 🔮 · Shipping impossible things since 2015</tspan>
+    <animate attributeName="opacity" values="0.6;0.85;0.6" dur="5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,-1;0,0" dur="2s" repeatCount="indefinite"/>
   </text>
 
-  <!-- small surreal shimmer on top edge -->
-  <rect x="0" y="0" width="720" height="6" rx="3" fill="url(#textGrad)" opacity="0.06">
-    <animate attributeName="opacity" values="0.02;0.12;0.02" dur="6s" repeatCount="indefinite"/>
-    <animateTransform attributeName="transform" type="translate" dur="10s" values="0 0; 60 0; -40 0; 0 0" repeatCount="indefinite"/>
+  <!-- Etherial top glow -->
+  <rect width="100%" height="4" fill="url(#textGrad)" opacity="0.1">
+    <animate attributeName="opacity" values="0.05;0.15;0.05" dur="6s" repeatCount="indefinite"/>
   </rect>
+  
+  <!-- Glow filter for orbs -->
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
 </svg>
 </p>
 
-# 👋 Hi, I’m **@Chrispin-m**
-> Hacker by habit, builder by boredom. I solder ideas together with code-now dabbling in web3, motoko, and on-chain chaos.
+<h1 align="center">🌌 Chrispin Mwangi Wachira</h1>
+<h3 align="center">Digital Architect · Code Sorcerer · Reality Bender</h3>
+
+> *"Building impossible systems at the intersection of cryptography and chaos"*
 
 ---
 
-## What I tinker with
-[![Python](https://img.shields.io/badge/-Python-364A9E?style=flat&logo=python&logoColor=white)]
-[![Django](https://img.shields.io/badge/-Django-092E20?style=flat&logo=django&logoColor=white)]
-[![Rust](https://img.shields.io/badge/-Rust-000000?style=flat&logo=rust&logoColor=white)]
-[![Motoko](https://img.shields.io/badge/-Motoko-7E57C2?style=flat&logo=internet-computer&logoColor=white)]
-[![Solidity](https://img.shields.io/badge/-Solidity-363636?style=flat&logo=ethereum&logoColor=white)]
-[![TypeScript](https://img.shields.io/badge/-TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)]
-[![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=000)]
-[![Vue](https://img.shields.io/badge/-Vue.js-4FC08D?style=flat&logo=vue.js&logoColor=white)]
-[![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)]
-[![Kubernetes](https://img.shields.io/badge/-K8s-326CE5?style=flat&logo=kubernetes&logoColor=white)]
+## 🔮 Tech Grimoire
+
+![](https://img.shields.io/badge/Python-364A9E?style=for-the-badge&logo=python&logoColor=white)
+![](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+![](https://img.shields.io/badge/Motoko-7E57C2?style=for-the-badge&logo=internet-computer&logoColor=white)
+![](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=ethereum&logoColor=white)
+![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=000)
+![](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![](https://img.shields.io/badge/Web3-F16822?style=for-the-badge&logo=web3.js&logoColor=white)
 
 ---
 
-## Current Focus & Projects
+## A Map Maybe?
+
 ```mermaid
 flowchart LR
-  A[Ideas] --> B{Pick a Stack}
-  B -->|onchain| C[Solidity + Hardhat]
-  B -->|IC| D[Motoko + DFINITY]
-  B -->|infra| E[Docker + Kubernetes + CI/CD]
-  B -->|apps| F[React + TypeScript + Vue]
-  C --> G[DeFi / NFTs / Oracles]
-  D --> H[Canister apps & distributed state]
-  E --> I[Automated tests, infra-as-code, observability]
-````
+  A[Cosmic Idea] --> B{Reality Portal}
+  B -->|Ethereum| C[Solidity + Hardhat]
+  B -->|Internet Computer| D[Motoko + DFINITY]
+  B -->|Zero Knowledge| E[zk-SNARKs + Circom]
+  B -->|Infra| F[Terraform + Kubernetes]
+  C --> G[DeFi Protocols]
+  D --> H[Autonomous Canisters]
+  E --> I[Private Transactions]
+  F --> J[Self-Healing Systems]
+```
 
 ---
 
-## Nerdy Highlights
+## 🧪 Lab Notes
 
-* 🔭 Building cross-chain demos and **on-device** cryptographic experiments.
-* 🛠️ Fluent in **Rust** for performance-critical tools, **Motoko** for the Internet Computer, and **Solidity** for EVM contracts.
-* 🎛️ Love CI/CD pipelines, container orchestration, and secure deployment patterns (GitHub Actions, Docker, k8s).
-* 🔐 Practicing secure coding + red-team thinking — I like finding the edge cases.
-* 🌱 Always learning: ML ops, zero-knowledge proofs, and better DX for devs.
+- 🔭 Crafting **on-chain DNA sequencers** using decentralized oracles
+- 🌱 Growing **zk-rollup ecosystems** for private computational markets
+- 🧠 Teaching smart contracts to dream using **neural circuit synthesis**
+- 🛡️ Building **self-shielding protocols** against quantum decoherence
+- ⚗️ Distilling **cryptographic essence** from blockchain entropy fields
 
 ---
 
-## GitHub Live Badges & Streaks
+## 📜 GitHub Chronicles
 
-<!-- GitHub stats / streaks-->
-
+<!-- GitHub stats with ethereal theme -->
 <p align="center">
-  <img alt="Chrispin's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=Chrispin-m&show_icons=true&count_private=true&theme=radical" />
-  &nbsp;
-  <img alt="streak" src="https://github-readme-streak-stats.herokuapp.com/?user=Chrispin-m&theme=dark&date_format=%5By%20%5DM%20j" />
+  <a href="https://github.com/Chrispin-m">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Chrispin-m&show_icons=true&theme=radical&count_private=true&bg_color=0d1117&border_color=7e57c2&title_color=7ef9a2&icon_color=7ad8ff"/>
+    <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Chrispin-m&theme=dark&background=0d1117&ring=7e57c2&fire=7ef9a2&currStreakLabel=7ad8ff&date_format=%5BY%5D"/>
+  </a>
 </p>
 
 ---
 
-## Fancy Terminal-ish Section (interactive-feel)
+## 🌀 Terminal Portal for fun
 
 <p align="center">
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="140" viewBox="0 0 720 140" role="img" aria-label="Chrispin-m terminal banner">
-  <!-- background -->
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="180" viewBox="0 0 720 180" preserveAspectRatio="xMidYMid meet">
   <defs>
-    <linearGradient id="g1" x1="0" x2="1">
-      <stop offset="0" stop-color="#02202a"/>
-      <stop offset="1" stop-color="#071028"/>
+    <!-- Terminal glow gradient -->
+    <linearGradient id="terminalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a1a2a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#07162a" stop-opacity="0.95"/>
     </linearGradient>
-    <linearGradient id="neon" x1="0" x2="1">
-      <stop offset="0" stop-color="#7ef9a2"/>
-      <stop offset="1" stop-color="#7ad8ff"/>
+    
+    <!-- Neon text gradient -->
+    <linearGradient id="neon" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#7ef9a2"/>
+      <stop offset="100%" stop-color="#7ad8ff"/>
     </linearGradient>
-    <!-- clip used to 'reveal' the typed command -->
-    <clipPath id="revealMask">
-      <rect id="maskRect" x="0" y="0" width="0" height="28" />
+    
+    <!-- Animated command reveal -->
+    <clipPath id="typeReveal">
+      <rect id="revealer" width="0" height="30"/>
     </clipPath>
   </defs>
-
-  <rect x="0" y="0" width="720" height="140" rx="12" fill="url(#g1)"/>
-
-  <!-- header -->
-  <text x="28" y="36" font-family="SFMono-Regular, Consolas, 'Roboto Mono', monospace"
-        font-weight="700" font-size="18" fill="url(#neon)" letter-spacing="0.6">
-    ➜ chrispin@devbox ~
+  
+  <!-- Terminal body -->
+  <rect x="20" y="20" width="680" height="140" rx="10" fill="url(#terminalGrad)" stroke="#2a3f5f" stroke-width="1"/>
+  
+  <!-- Header -->
+  <text x="40" y="50" font-family="'Fira Code',monospace" font-size="16" fill="url(#neon)">
+    ➜ chrispin@portal ~
   </text>
-
-  <!-- glass panel -->
-  <rect x="16" y="44" width="688" height="78" rx="8" fill="rgba(255,255,255,0.02)"/>
-
-  <g transform="translate(32,72)">
-    <g clip-path="url(#revealMask)">
-      <text id="cmd" x="0" y="0" font-family="SFMono-Regular, monospace" font-size="14" fill="#cdeedd">
-        &gt; git clone https://github.com/Chrispin-m/awesome-stuff.git
+  
+  <!-- Command line with typing effect -->
+  <g transform="translate(40, 90)">
+    <g clip-path="url(#typeReveal)">
+      <text font-family="'Fira Code',monospace" font-size="14" fill="#c0d7ff">
+        > curl https://cosmos.chrispin.dev | reality-bend --ethereal
       </text>
     </g>
-    <!-- animate the mask width to create a typing reveal effect -->
-    <animate xlink:href="#maskRect" attributeName="width" from="0" to="540" dur="3.6s" begin="0.6s" fill="freeze" />
-    <!-- blinking neon cursor -->
-    <rect id="cursor" x="6" y="-14" width="8" height="16" rx="2" fill="url(#neon)" opacity="0.95">
-      <!-- cursor moves to end of text by animating x after reveal -->
-      <animate attributeName="x" from="6" to="550" begin="4.2s" dur="0.1s" fill="freeze" />
-      <animate attributeName="opacity" values="0;1;0;1" dur="1.2s" repeatCount="indefinite" />
+    <rect x="0" y="-10" width="2" height="20" fill="url(#neon)">
+      <animate attributeName="opacity" values="1;0" dur="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="x" from="0" to="440" begin="3s" dur="0.1s" fill="freeze"/>
     </rect>
   </g>
-
-  <!-- animated "output" lines that appear after typing -->
-  <text x="32" y="112" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="0">
-    Cloning into 'awesome-stuff'...
-    <animate attributeName="opacity" values="0;1" begin="4.5s" dur="0.4s" fill="freeze"/>
+  
+  <!-- Output lines -->
+  <text x="40" y="120" font-family="'Fira Code',monospace" font-size="12" fill="#a0b0ff" opacity="0">
+    ▸ Downloading quantum state vectors...
+    <animate attributeName="opacity" begin="3.5s" values="0;1" dur="0.3s" fill="freeze"/>
   </text>
-
-  <text x="32" y="128" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="0">
-    remote: Enumerating objects: 42, done.
-    <animate attributeName="opacity" values="0;1" begin="4.9s" dur="0.4s" fill="freeze"/>
+  
+  <text x="40" y="140" font-family="'Fira Code',monospace" font-size="12" fill="#a0b0ff" opacity="0">
+    ▸ Compiling reality distortion field... 
+    <animate attributeName="opacity" begin="4s" values="0;1" dur="0.3s" fill="freeze"/>
+    <animate attributeName="fill" values="#a0b0ff;#7ef9a2" begin="5s" dur="1s" fill="freeze"/>
   </text>
-
-  <text x="320" y="128" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="0">
-    done.
-    <animate attributeName="opacity" values="0;1" begin="5.3s" dur="0.3s" fill="freeze"/>
+  
+  <text x="40" y="160" font-family="'Fira Code',monospace" font-size="12" fill="#7ef9a2" opacity="0">
+    ✓ Reality matrix initialized. Welcome to the ether.
+    <animate attributeName="opacity" begin="5.5s" values="0;1" dur="0.5s" fill="freeze"/>
   </text>
-
-  <!-- subtle neon shimmer line -->
-  <rect x="16" y="44" width="688" height="2" rx="1" fill="url(#neon)" opacity="0.06">
-    <animate attributeName="opacity" values="0.02;0.12;0.02" dur="6s" repeatCount="indefinite"/>
-    <animateTransform attributeName="transform" type="translate" values="0 0; 80 0; -60 0; 0 0" dur="9s" repeatCount="indefinite" />
+  
+  <!-- Animate the revealer -->
+  <animate href="#revealer" 
+           attributeName="width" 
+           from="0" 
+           to="440" 
+           dur="3s" 
+           begin="0.5s" 
+           fill="freeze"/>
+  
+  <!-- Floating particles -->
+  <circle cx="100" cy="70" r="1.5" fill="#7ad8ff" opacity="0.7">
+    <animateMotion path="M0,0 C20,15 -10,20 0,0" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Terminal glow effect -->
+  <rect x="20" y="20" width="680" height="140" rx="10" fill="none" stroke="url(#neon)" stroke-width="0.5" opacity="0.15">
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
   </rect>
 </svg>
 </p>
 
+---
+
+## 🌌 Connect With-
+
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Cspiny)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Chrispin-m)
+
+**Random Stuff:** `chrispin@reality-bender.sig`
 
 ---
 
-## Want to collab?
+## 🧬 Codex Principles
 
-* 💬 Ping me on WhatsApp: [+254 710 358 658](https://wa.me/254710358658)
-* ✉️ Or just open an issue / PR on any repo - I respond faster to well-crafted bug reports and memes.
-
----
-
-## How I like my repos
-
-* Repro steps + tiny demo (codesandbox / local)
-* Tests (unit > integration) and a CI badge
-* Small, focused modules. One responsibility per package.
+```diff
++ Systems must breathe like living organisms
++ Security through transparency & simplicity
++ Every dependency is a potential reality fracture
++ Documentation as spellcraft ritual
++ Tests as temporal stability anchors
+```
 
 ---
 
-## Fun facts
-
-* 🧪 I break my code on purpose so CI can catch the clever ways I try to be clever.
-* 🕹️ I organize occasional Tree-Planting Skate Tours - code gets greener IRL.
-* ⚙️ My dev environment probably has more dotfiles than a small OS distro.
-
----
-
-Give me a star ⭐ - my code runs faster when it feels loved. It’s science. Trust me.
-
----
+> *"Give me a star ⭐ - my code runs faster when it feels loved. It’s science. Trust me."*
+```
