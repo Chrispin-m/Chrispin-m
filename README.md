@@ -152,17 +152,75 @@ flowchart LR
 
 ## Fancy Terminal-ish Section (interactive-feel)
 
-> Paste this snippet into an issue, blog, or any markdown that allows inline SVGs to get a live-typing terminal flair.
+<p align="center">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="140" viewBox="0 0 720 140" role="img" aria-label="Chrispin-m terminal banner">
+  <!-- background -->
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#02202a"/>
+      <stop offset="1" stop-color="#071028"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0" x2="1">
+      <stop offset="0" stop-color="#7ef9a2"/>
+      <stop offset="1" stop-color="#7ad8ff"/>
+    </linearGradient>
+    <!-- clip used to 'reveal' the typed command -->
+    <clipPath id="revealMask">
+      <rect id="maskRect" x="0" y="0" width="0" height="28" />
+    </clipPath>
+  </defs>
 
-```html
-<svg width="640" height="64" viewBox="0 0 640 64" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" rx="8" fill="#0b0f1a"/>
-  <text x="12" y="40" font-family="monospace" font-size="16" fill="#7ef9a2">
-    <tspan id="type">> git clone https://github.com/Chrispin-m/</tspan>
+  <rect x="0" y="0" width="720" height="140" rx="12" fill="url(#g1)"/>
+
+  <!-- header -->
+  <text x="28" y="36" font-family="SFMono-Regular, Consolas, 'Roboto Mono', monospace"
+        font-weight="700" font-size="18" fill="url(#neon)" letter-spacing="0.6">
+    ➜ chrispin@devbox ~
   </text>
-  <animate xlink:href="#type" attributeName="opacity" from="0" to="1" dur="1.8s" begin="0s" fill="freeze"/>
+
+  <!-- glass panel -->
+  <rect x="16" y="44" width="688" height="78" rx="8" fill="rgba(255,255,255,0.02)"/>
+
+  <g transform="translate(32,72)">
+    <g clip-path="url(#revealMask)">
+      <text id="cmd" x="0" y="0" font-family="SFMono-Regular, monospace" font-size="14" fill="#cdeedd">
+        &gt; git clone https://github.com/Chrispin-m/awesome-stuff.git
+      </text>
+    </g>
+    <!-- animate the mask width to create a typing reveal effect -->
+    <animate xlink:href="#maskRect" attributeName="width" from="0" to="540" dur="3.6s" begin="0.6s" fill="freeze" />
+    <!-- blinking neon cursor -->
+    <rect id="cursor" x="6" y="-14" width="8" height="16" rx="2" fill="url(#neon)" opacity="0.95">
+      <!-- cursor moves to end of text by animating x after reveal -->
+      <animate attributeName="x" from="6" to="550" begin="4.2s" dur="0.1s" fill="freeze" />
+      <animate attributeName="opacity" values="0;1;0;1" dur="1.2s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <!-- animated "output" lines that appear after typing -->
+  <text x="32" y="112" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="0">
+    Cloning into 'awesome-stuff'...
+    <animate attributeName="opacity" values="0;1" begin="4.5s" dur="0.4s" fill="freeze"/>
+  </text>
+
+  <text x="32" y="128" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="0">
+    remote: Enumerating objects: 42, done.
+    <animate attributeName="opacity" values="0;1" begin="4.9s" dur="0.4s" fill="freeze"/>
+  </text>
+
+  <text x="320" y="128" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="0">
+    done.
+    <animate attributeName="opacity" values="0;1" begin="5.3s" dur="0.3s" fill="freeze"/>
+  </text>
+
+  <!-- subtle neon shimmer line -->
+  <rect x="16" y="44" width="688" height="2" rx="1" fill="url(#neon)" opacity="0.06">
+    <animate attributeName="opacity" values="0.02;0.12;0.02" dur="6s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 80 0; -60 0; 0 0" dur="9s" repeatCount="indefinite" />
+  </rect>
 </svg>
-```
+</p>
+
 
 ---
 
