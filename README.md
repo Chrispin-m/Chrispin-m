@@ -1,5 +1,5 @@
-<p align="center">
-
+<div align="center">
+  
 ```diff
 +╔═════════════════════════════════════════════════════════════════════╗
 +_________   ___ _____________.___  ___________________.___ _______    ║
@@ -16,7 +16,7 @@
 +    ██║   ███████╗╚██████╗██║  ██║██╗╚██████╗╚██████╔╝██║██║ ╚═╝ ██║
 +    ╚═╝   ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝╚═╝     ╚═╝
 ```
-</p>  
+</div>  
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160" role="img" aria-label="Cosmic terminal banner">
   <!-- Terminal header -->
   <text x="32" y="48" font-family="'SF Mono','Fira Code',monospace" 
