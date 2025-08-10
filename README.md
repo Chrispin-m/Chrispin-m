@@ -37,45 +37,82 @@
 > *"Building impossible systems at the intersection of cryptography and chaos"*
 
 ---
+## 🧙‍♂️ Tech Grimoire: The Architect's Arsenal
 
-## 🔮 Tech Grimoire
-
-![](https://img.shields.io/badge/Python-364A9E?style=for-the-badge&logo=python&logoColor=white)
+![](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+![](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+![](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)
 ![](https://img.shields.io/badge/Motoko-7E57C2?style=for-the-badge&logo=internet-computer&logoColor=white)
-![](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=ethereum&logoColor=white)
-![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=000)
+![](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![](https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white)
 ![](https://img.shields.io/badge/Web3-F16822?style=for-the-badge&logo=web3.js&logoColor=white)
+![](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
 
 ---
 
-## A Map Maybe?
+## 🗺️ Reality Forging Map
 
 ```mermaid
-flowchart LR
-  A[Cosmic Idea] --> B{Reality Portal}
-  B -->|Ethereum| C[Solidity + Hardhat]
-  B -->|Internet Computer| D[Motoko + DFINITY]
-  B -->|Zero Knowledge| E[zk-SNARKs + Circom]
-  B -->|Infra| F[Terraform + Kubernetes]
-  C --> G[DeFi Protocols]
-  D --> H[Autonomous Canisters]
-  E --> I[Private Transactions]
-  F --> J[Self-Healing Systems]
+flowchart TB
+  A[Cosmic Idea] --> B{Reality Forge}
+  B -->|Web Sorcery| C[React + TypeScript]
+  B -->|Blockchain| D[Solidity/EVM + Motoko/ICP]
+  B -->|Zero Knowledge| E[zk-SNARKs + Noir]
+  B -->|Infrastructure| F[Terraform + Kubernetes]
+  B -->|Native Realm| G[C++/Rust/Go]
+  B -->|Machine Mind| H[Python/TensorFlow]
+  
+  C --> I[Progressive Web Apps]
+  D --> J[Smart Contracts]
+  E --> K[Private Computation]
+  F --> L[Cloud Clusters]
+  G --> M[High-Performance Systems]
+  H --> N[AI/ML Models]
+  
+  subgraph Legend
+    direction LR
+    X[Ethereum] <--> Y[Internet Computer]
+    Z[Frontend] <--> AA[Backend]
+  end
 ```
+
 ---
 
-## 📜 GitHub Chronicles
+## 📊 GitHub Alchemy Circle
 
-<!-- GitHub stats with ethereal theme -->
-<p align="center">
-  <a href="https://github.com/Chrispin-m">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Chrispin-m&show_icons=true&theme=radical&count_private=true&bg_color=0d1117&border_color=7e57c2&title_color=7ef9a2&icon_color=7ad8ff"/>
-    <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Chrispin-m&theme=dark&background=0d1117&ring=7e57c2&fire=7ef9a2&currStreakLabel=7ad8ff&date_format=%5BY%5D"/>
-  </a>
-</p>
+<!-- Dynamic stats with interactive elements -->
+<div align="center">
+
+[![Tech Nexus](https://github-readme-stats.vercel.app/api?username=Chrispin-m&show_icons=true&theme=nightowl&count_private=true&bg_color=0d1117&border_color=7e57c2&title_color=7ef9a2&icon_color=7ad8ff&include_all_commits=true)](https://github.com/Chrispin-m)
+[![Language Forge](https://github-readme-stats.vercel.app/api/top-langs/?username=Chrispin-m&layout=compact&theme=nightowl&bg_color=0d1117&border_color=7e57c2&title_color=7ef9a2&hide_border=true&langs_count=8)](https://github.com/Chrispin-m)
+
+[![Contribution Matrix](https://streak-stats.demolab.com?user=Chrispin-m&theme=nightowl&background=0D1117&border=7E57C2&stroke=7AD8FF&ring=7EF9A2&fire=7EF9A2&currStreakNum=7AD8FF&sideNums=7AD8FF&sideLabels=7EF9A2&dates=95989A)](https://git.io/streak-stats)
+
+```javascript
+// in code
+const techGrimoire = {
+  domains: [
+    "Blockchain Alchemy", 
+    "Cloud Architecture",
+    "Cryptographic Systems",
+    "Distributed Networks",
+    "Quantum-Resistant Designs"
+  ],
+  currentFocus: "Building decentralized autonomous organizations",
+  realityVersion: "4.0"
+};
+```
+</div>
 ---
 
 ## 🧪 Lab Notes
