@@ -122,67 +122,13 @@ flowchart LR
 
 ---
 
-## 🌀 Terminal Portal for fun
-
-<p align="center">
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="180" viewBox="0 0 720 180">
-  <defs>
-    <!-- Terminal glow gradient -->
-    <linearGradient id="terminalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#0a1a2a"/>
-      <stop offset="100%" stop-color="#07162a"/>
-    </linearGradient>
-    <!-- Neon text gradient -->
-    <linearGradient id="neon" x1="0%" x2="100%">
-      <stop offset="0%" stop-color="#7ef9a2"/>
-      <stop offset="100%" stop-color="#7ad8ff"/>
-    </linearGradient>
-    <!-- Orb glow effect -->
-    <radialGradient id="portalOrb" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#7ef9a2" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#0a1a2a" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  
-  <!-- Terminal body -->
-  <rect x="20" y="20" width="680" height="140" rx="10" fill="url(#terminalGrad)" stroke="#2a3f5f" stroke-width="1"/>
-  
-  <!-- Portal orb -->
-  <circle cx="660" cy="40" r="16" fill="url(#portalOrb)" filter="url(#glow)"/>
-  
-  <!-- Header -->
-  <text x="40" y="50" font-family="'Fira Code',monospace" font-size="16" fill="url(#neon)">
-    ➜ chrispin@portal ~
-  </text>
-  
-  <!-- Command line -->
-  <text x="40" y="90" font-family="'Fira Code',monospace" font-size="14" fill="#c0d7ff">
-    > curl https://cosmos.chrispin.dev | reality-bend --ethereal
-  </text>
-  
-  <!-- Cursor -->
-  <rect x="480" y="80" width="8" height="16" rx="2" fill="url(#neon)"/>
-  
-  <!-- Output lines -->
-  <text x="40" y="120" font-family="'Fira Code',monospace" font-size="12" fill="#a0b0ff">
-    ▸ Downloading quantum state vectors...
-  </text>
-  <text x="40" y="140" font-family="'Fira Code',monospace" font-size="12" fill="#a0b0ff">
-    ▸ Compiling reality distortion field... 
-  </text>
-  <text x="40" y="160" font-family="'Fira Code',monospace" font-size="12" fill="#7ef9a2">
-    ✓ Reality matrix initialized. Welcome to the ether.
-  </text>
-  
-  <!-- Floating particles -->
-  <circle cx="100" cy="70" r="1.5" fill="#7ad8ff" opacity="0.7"/>
-  <circle cx="650" cy="120" r="1.2" fill="#7ef9a2" opacity="0.6"/>
-  <circle cx="300" cy="150" r="1" fill="#7ad8ff" opacity="0.5"/>
-  
-  <!-- Terminal glow effect -->
-  <rect x="20" y="20" width="680" height="140" rx="10" fill="none" stroke="url(#neon)" stroke-width="0.5" opacity="0.15"/>
-</svg>
-</p>
+## 🌀 Terminal Portal (fun)
+```bash
+➜ chrispin@portal ~ > curl https://cosmos.chrispin.dev | reality-bend --ethereal
+▸ Downloading quantum state vectors...
+▸ Compiling reality distortion field...
+✓ Reality matrix initialized. Welcome to the ether.
+```
 ---
 
 ## 🌌 Connect With-
@@ -190,7 +136,7 @@ flowchart LR
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Cspiny)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Chrispin-m)
 
-**Random Stuff:** `chrispin@reality-bender.sig`
+**Random Stuff:** `[Love Story](https://ichrispindiary.vercel.app/love-life)`
 
 ---
 
