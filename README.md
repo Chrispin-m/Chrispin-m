@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Banner" src="https://tenor.com/bo3IhJf9wVs.gif" width="720"/>
+  <img alt="Banner" src="https://github.com/Chrispin-m/ichrispindiary/blob/main/Register%20-%20Login.gif" width="720"/>
 </p>
 
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160" role="img" aria-label="Cosmic terminal banner">
