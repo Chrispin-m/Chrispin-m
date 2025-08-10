@@ -1,38 +1,97 @@
 <p align="center">
-
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="720" height="120" viewBox="0 0 720 120"
+     width="720" height="160" viewBox="0 0 720 160"
      role="img" aria-label="Chrispin-m — terminal banner">
-  <rect x="0" y="0" width="720" height="120" rx="12" fill="#0b1020"/>
-
   <defs>
-    <linearGradient id="g" x1="0" x2="1">
-      <stop offset="0" stop-color="#00ff99"/>
-      <stop offset="1" stop-color="#00d4ff"/>
+    <!-- background gradient that subtly cycles -->
+    <linearGradient id="bgGrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#06101a">
+        <animate attributeName="stop-color" dur="8s" values="#06101a;#081428;#0b1020;#06101a" repeatCount="indefinite" />
+      </stop>
+      <stop offset="1" stop-color="#07142a">
+        <animate attributeName="stop-color" dur="10s" values="#07142a;#09203a;#06101a;#07142a" repeatCount="indefinite" />
+      </stop>
     </linearGradient>
+    <!-- glowing orb gradient -->
+    <radialGradient id="orb" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#00ffd5" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#00b2ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <!-- text gradient -->
+    <linearGradient id="textGrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#7ef9a2"/>
+      <stop offset="1" stop-color="#7ad8ff"/>
+    </linearGradient>
+    <!-- subtle grain using tiny semi-opaque rectangles (keeps it safe vs complex filters) -->
+    <pattern id="grain" width="6" height="6" patternUnits="userSpaceOnUse">
+      <rect width="6" height="6" fill="#000" opacity="0.02"/>
+      <circle cx="1.2" cy="4.8" r="0.6" fill="#fff" opacity="0.03"/>
+      <circle cx="4.7" cy="1.5" r="0.4" fill="#fff" opacity="0.02"/>
+    </pattern>
   </defs>
 
-  <text x="28" y="38" font-family="SFMono-Regular, Consolas, 'Roboto Mono', monospace"
-        font-weight="600" font-size="18" fill="url(#g)">
+  <!-- background -->
+  <rect x="0" y="0" width="720" height="160" rx="16" fill="url(#bgGrad)"/>
+  <rect x="0" y="0" width="720" height="160" rx="16" fill="url(#grain)" />
+
+  <!-- drifting orbs for surreal mood -->
+  <g opacity="0.85">
+    <circle cx="120" cy="30" r="36" fill="url(#orb)" opacity="0.9">
+      <animateTransform attributeName="transform" type="translate" dur="16s"
+                        values="0 0; 40 12; -20 30; 0 0" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.95;0.6;0.7" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="560" cy="46" r="26" fill="url(#orb)" opacity="0.8">
+      <animateTransform attributeName="transform" type="translate" dur="14s"
+                        values="0 0; -30 18; 8 28; 0 0" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.85;0.55;0.5" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="420" cy="120" r="18" fill="url(#orb)" opacity="0.7">
+      <animateTransform attributeName="transform" type="translate" dur="18s"
+                        values="0 0; 10 -28; -12 8; 0 0" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.8;0.45;0.4" dur="9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- header / prompt -->
+  <text x="32" y="48" font-family="SFMono-Regular, Consolas, 'Roboto Mono', monospace"
+        font-weight="700" font-size="18" fill="url(#textGrad)" letter-spacing="0.6">
     ➜  chrispin@devbox ~
+    <!-- tiny surreal wobble -->
+    <animateTransform attributeName="transform" type="translate" dur="6s" values="0 0; 2 -1; -2 1; 0 0" repeatCount="indefinite"/>
   </text>
 
-  <text x="28" y="62" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="1">
+  <!-- blinking cursor -->
+  <rect x="268" y="34" width="8" height="12" rx="2" fill="#7ef9a2" opacity="0.95">
+    <animate attributeName="opacity" values="0;1;0;1" dur="1.4s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- three tech lines: crossfade + slight float -->
+  <text id="line1" x="32" y="78" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="1">
     Python · Django · Rust · Motoko · Solidity · TypeScript · React · Vue
-    <animate attributeName="opacity" values="1;0;0;1" dur="12s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="opacity" values="1;0;0;1" dur="12s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" dur="12s" values="0 0; 0 -2; 0 4; 0 0" repeatCount="indefinite"/>
   </text>
 
-  <text x="28" y="80" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="0">
+  <text id="line2" x="32" y="100" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="0">
     Web3 · Smart contracts · DevOps · CI/CD · Security · AI pipelines
-    <animate attributeName="opacity" values="0;1;0;0" dur="12s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="opacity" values="0;1;0;0" dur="12s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" dur="12s" values="0 2; 0 0; 0 -3; 0 2" repeatCount="indefinite"/>
   </text>
 
-  <text x="28" y="98" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="0">
+  <text id="line3" x="32" y="122" font-family="SFMono-Regular, monospace" font-size="12" fill="#9aa7c7" opacity="0">
     Open-source tinkerer 🔧 · Ship, test, and break stuff safely
-    <animate attributeName="opacity" values="0;0;1;0" dur="12s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="opacity" values="0;0;1;0" dur="12s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" dur="12s" values="0 -3; 0 2; 0 0; 0 -3" repeatCount="indefinite"/>
   </text>
-</svg>
 
+  <!-- small surreal shimmer on top edge -->
+  <rect x="0" y="0" width="720" height="6" rx="3" fill="url(#textGrad)" opacity="0.06">
+    <animate attributeName="opacity" values="0.02;0.12;0.02" dur="6s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" dur="10s" values="0 0; 60 0; -40 0; 0 0" repeatCount="indefinite"/>
+  </rect>
+</svg>
 </p>
 
 # 👋 Hi, I’m **@Chrispin-m**
