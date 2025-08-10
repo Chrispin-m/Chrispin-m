@@ -1,13 +1,11 @@
-<p align="center">
-  <img 
-    alt="Banner" 
-    src="https://github.com/Chrispin-m/ichrispindiary/blob/main/Register%20-%20Login.gif" 
-    width="480" 
-    style="border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" 
-  />
-</p>
-
-
+   ```diff
++_________   ___ _____________.___  ___________________.___ _______   
++\_   ___ \ /   |   \______   \   |/   _____/\______   \   |\      \  
++/    \  \//    ~    \       _/   |\_____  \  |     ___/   |/   |   \ 
++\     \___\    Y    /    |   \   |/        \ |    |   |   /    |    \
++ \______  /\___|_  /|____|_  /___/_______  / |____|   |___\____|__  /
++        \/       \/        \/            \/                       \/
+  ```  
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160" role="img" aria-label="Cosmic terminal banner">
   <!-- Terminal header -->
   <text x="32" y="48" font-family="'SF Mono','Fira Code',monospace" 
@@ -67,7 +65,17 @@ flowchart LR
   E --> I[Private Transactions]
   F --> J[Self-Healing Systems]
 ```
+---
 
+## 📜 GitHub Chronicles
+
+<!-- GitHub stats with ethereal theme -->
+<p align="center">
+  <a href="https://github.com/Chrispin-m">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Chrispin-m&show_icons=true&theme=radical&count_private=true&bg_color=0d1117&border_color=7e57c2&title_color=7ef9a2&icon_color=7ad8ff"/>
+    <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Chrispin-m&theme=dark&background=0d1117&ring=7e57c2&fire=7ef9a2&currStreakLabel=7ad8ff&date_format=%5BY%5D"/>
+  </a>
+</p>
 ---
 
 ## 🧪 Lab Notes
@@ -80,28 +88,7 @@ flowchart LR
 
 ---
 
-## 📜 GitHub Chronicles
-
-<!-- GitHub stats with ethereal theme -->
-<p align="center">
-  <a href="https://github.com/Chrispin-m">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Chrispin-m&show_icons=true&theme=radical&count_private=true&bg_color=0d1117&border_color=7e57c2&title_color=7ef9a2&icon_color=7ad8ff"/>
-    <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Chrispin-m&theme=dark&background=0d1117&ring=7e57c2&fire=7ef9a2&currStreakLabel=7ad8ff&date_format=%5BY%5D"/>
-  </a>
-</p>
-
----
-
 ## 🌀 Just For Fun
-
-   ```diff
-+_________   ___ _____________.___  ___________________.___ _______   
-+\_   ___ \ /   |   \______   \   |/   _____/\______   \   |\      \  
-+/    \  \//    ~    \       _/   |\_____  \  |     ___/   |/   |   \ 
-+\     \___\    Y    /    |   \   |/        \ |    |   |   /    |    \
-+ \______  /\___|_  /|____|_  /___/_______  / |____|   |___\____|__  /
-+        \/       \/        \/            \/                       \/
-  ```  
 
 <p align="center">
 
@@ -139,4 +126,14 @@ flowchart LR
 ---
 
 > *"Give me a star ⭐ - my code runs faster when it feels loved. It’s science. Trust me."*
-```
+
+<p align="center">
+  <img 
+    alt="Banner" 
+    src="https://github.com/Chrispin-m/ichrispindiary/blob/main/Register%20-%20Login.gif" 
+    width="480" 
+    style="border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" 
+  />
+</p>
+
+
