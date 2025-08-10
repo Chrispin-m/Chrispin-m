@@ -1,6 +1,12 @@
 <p align="center">
-  <img alt="Banner" src="https://github.com/Chrispin-m/ichrispindiary/blob/main/Register%20-%20Login.gif" width="720"/>
+  <img 
+    alt="Banner" 
+    src="https://github.com/Chrispin-m/ichrispindiary/blob/main/Register%20-%20Login.gif" 
+    width="480" 
+    style="border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" 
+  />
 </p>
+
 
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160" role="img" aria-label="Cosmic terminal banner">
   <!-- Terminal header -->
@@ -86,13 +92,23 @@ flowchart LR
 
 ---
 
-## 🌀 Terminal Portal (fun)
-```bash
-➜ chrispin@portal ~ > curl https://cosmos.chrispin.dev | reality-bend --ethereal
-▸ Downloading quantum state vectors...
-▸ Compiling reality distortion field...
-✓ Reality matrix initialized. Welcome to the ether.
-```
+## 🌀 Just For Fun
+<p align="center">
+  <img alt="CHRISPIN" src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22720%22%20height%3D%22140%22%20viewBox%3D%220%200%20720%20140%22%3E%0A%20%20%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22transparent%22%2F%3E%0A%20%20%3Ctext%20x%3D%2210%22%20y%3D%2220%22%20font-family%3D%22Fira%20Code%2C%20'Courier%20New'%2C%20monospace%22%20font-size%3D%2214%22%20fill%3D%22%2339FF14%22%3E%0A%20%20%20%20%3Ctspan%20x%3D%2210%22%20dy%3D%221.2em%22%3E%20%20_____%20_%20%20_%20%20_%20_%20%20%20_____%20_____%20%20_____%20%20_____%20_%20%20_%20__%20%20__%20_%20%3C%2Ftspan%3E%0A%20%20%20%20%3Ctspan%20x%3D%2210%22%20dy%3D%221.2em%22%3E%20%2F%20_____%7C%20%5C%20%7C%20%7C%2F%20_____%7C%20%20__%20%5C%7C%20%20__%20%5C%7C_%20%20%20_%7C%20%20%5C%20%7C%20%20%20%5C%2F%20%20%7C%20%7C%3C%2Ftspan%3E%0A%20%20%20%20%3Ctspan%20x%3D%2210%22%20dy%3D%221.2em%22%3E%7C%20%7C%20%20%20%20%7C%20%20%5C%7C%20%7C%20%7C%20%20%20%7C%20%7C%29%29%20%7C%20%7C%5C%20%20%7C%20%7C%20%20%7C%20%7C%3C%2Ftspan%3E%0A%20%20%20%20%3Ctspan%20x%3D%2210%22%20dy%3D%221.2em%22%3E%7C%20%7C%20%20%20%20%7C%20.%20%60%20%7C%20%7C%20%20%20%20%7C%20_%20%20%2F%7C%20%20_%20%20%2F%7C%20%20_%20%20%2F%20%20%20%7C%20%7C%20%7C%20.%20%60%20%7C%20%7C%5C%2F%7C%20%7C%20%3C%2Ftspan%3E%0A%20%20%20%20%3Ctspan%20x%3D%2210%22%20dy%3D%221.2em%22%3E%7C%20%7C_____%7C%20%7C%5C%20%20%7C%20%7C_____%7C%20%7C%20%5C%20%5C%7C%20%7C%20%7C%20%7C%20%20%5C%20%7C%20%7C%20%7C%20%20%7C%3C%2Ftspan%3E%0A%20%20%20%20%3Ctspan%20x%3D%2210%22%20dy%3D%221.2em%22%3E%20%5C_____%7C_%7C%20%5C_%7C%5C_____%7C_%7C%20%20%5C_%5C_%7C_%20%20%5C_%7C_%7C%20%20_%7C%20%3C%2Ftspan%3E%0A%20%20%3C%2Ftext%3E%0A%3C%2Fsvg%3E" width="680"/>
+</p>
+
+<p align="center">
+
+🟣🟢🟦  <strong>Chrispin</strong>  🟦🟢🟣
+
+<pre style="font-family:monospace">
+  ➜ @Chrispin-m ~ $ curl https://chrispin.dev | reality-bend --ethereal
+      ▸  . . . Downloading quantum state vectors...
+      ▸  . . . Compiling reality distortion field...
+      ✓  . . . Reality matrix initialized.  Welcome to the ether.
+</pre>
+
+</p>
 ---
 
 ## 🌌 Connect With-
