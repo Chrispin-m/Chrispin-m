@@ -1,4 +1,5 @@
-<div align="center">
+<p align="center">
+
 ```diff
 +╔═════════════════════════════════════════════════════════════════════╗
 +_________   ___ _____________.___  ___________________.___ _______    ║
@@ -14,9 +15,8 @@
 +    ██║   ██╔══╝  ██║     ██╔══██║   ██║     ██║   ██║██║██║╚██╔╝██║
 +    ██║   ███████╗╚██████╗██║  ██║██╗╚██████╗╚██████╔╝██║██║ ╚═╝ ██║
 +    ╚═╝   ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═════╝ ╚═╝╚═╝     ╚═╝
-</div> ```
-
-  ```  
+```
+</p>  
 <svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160" role="img" aria-label="Cosmic terminal banner">
   <!-- Terminal header -->
   <text x="32" y="48" font-family="'SF Mono','Fira Code',monospace" 
@@ -108,21 +108,6 @@ flowchart TB
 [![Language Forge](https://github-readme-stats.vercel.app/api/top-langs/?username=Chrispin-m&layout=compact&theme=nightowl&bg_color=0d1117&border_color=7e57c2&title_color=7ef9a2&hide_border=true&langs_count=8)](https://github.com/Chrispin-m)
 
 [![Contribution Matrix](https://streak-stats.demolab.com?user=Chrispin-m&theme=nightowl&background=0D1117&border=7E57C2&stroke=7AD8FF&ring=7EF9A2&fire=7EF9A2&currStreakNum=7AD8FF&sideNums=7AD8FF&sideLabels=7EF9A2&dates=95989A)](https://git.io/streak-stats)
-
-```javascript
-// in code
-const techGrimoire = {
-  domains: [
-    "Blockchain Alchemy", 
-    "Cloud Architecture",
-    "Cryptographic Systems",
-    "Distributed Networks",
-    "Quantum-Resistant Designs"
-  ],
-  currentFocus: "Building decentralized autonomous organizations",
-  realityVersion: "4.0"
-};
-```
 </div>
 ---
 
