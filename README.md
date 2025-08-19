@@ -142,7 +142,7 @@ flowchart TB
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Cspiny)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Chrispin-m)
 
-**Random Stuff:** `[Love Story](https://ichrispindiary.vercel.app/love-life)`
+**Random Stuff:** [Love Story](https://ichrispindiary.vercel.app/love-life)
 
 ---
 
